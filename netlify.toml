@@ -1,12 +1,3 @@
 [build]
-  command = "curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_INSTALL_NO_STACK=1 BOOTSTRAP_HASKELL_INSTALL_NO_HLS=1 sh && export PATH=$HOME/.ghcup/bin:$HOME/.cabal/bin:$PATH && cabal update && cabal build && cabal run site -- build"
+  command = ""
   publish = "_site"
-
-[[plugins]]
-  package = "netlify-plugin-cache"
-  [plugins.inputs]
-    paths = [
-      "~/.cabal",
-      "~/.ghcup",
-      "dist-newstyle"
-    ]
