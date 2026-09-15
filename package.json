@@ -1,0 +1,7 @@
+{
+  "name": "hakyll-site",
+  "version": "1.0.0",
+  "devDependencies": {
+    "netlify-plugin-cache": "latest"
+  }
+}
