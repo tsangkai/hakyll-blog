@@ -1,0 +1,53 @@
+
+<div class="post">
+
+    <div class="post-header">
+        <div class="img">
+            <a href="$url$">  
+                <img class="book-img" src="$img$">
+            </a>
+        </div>
+
+        <h1>$title$</h1>
+
+        <div class="info">
+            <p>
+                <time datetime="$date$">
+                    $date$
+                </time>
+            </p>
+        
+            <hr class="bar">
+
+            <div class="post-tag">
+                $tags$
+            </div>
+        </div>
+
+    </div>
+
+    <article>
+        $body$
+    </article>
+
+    <div class="pagination">
+        <div class="prev-post">
+            $if(prevPostUrl)$
+                <a href="$prevPostUrl$">
+                    ← Older post
+                    <br>
+                    <strong>$prevPostTitle$</strong>
+                </a>
+            $endif$
+        </div>
+        <div class="next-post">
+            $if(nextPostUrl)$
+                <a href="$nextPostUrl$">
+                    Newer post →
+                    <br>
+                    <strong>$nextPostTitle$</strong>
+                </a>
+            $endif$
+        </div>
+    </div>
+</div>

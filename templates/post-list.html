@@ -1,0 +1,49 @@
+<div class="post-card-container">
+    $for(posts)$
+
+
+    <div class="post-card">
+        <div class="img">
+            <a href="$url$">  
+                <img class="book-img" src="$img$">
+            </a>
+        </div>
+
+        <div class="post-summary">
+            <h2 class="title">
+                <a href="$url$">$title$</a>
+            </h2>
+
+            <div class="info">
+                <p>
+                    <time datetime="$date$">
+                        $date$
+                    </time>
+                </p>
+            
+                <hr class="bar">
+
+                <div class="tag">
+                    $tags$
+                </div>
+            </div>
+
+            <div class="teaser">
+                <p>$teaser$</p>
+                
+                <a href="$url$">Continue reading →</a>
+            </div>
+        </div>
+
+
+    </div>
+    $endfor$
+</div>
+
+
+
+
+
+
+
+
