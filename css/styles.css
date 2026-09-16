@@ -48,7 +48,7 @@ body {
   display: grid;
   gap: var(--row-gap-medium);
 
-  font: var(--text-body);
+  font: var(--font-family-ui);
 }
 
 a {
@@ -74,7 +74,6 @@ a:hover {
   align-items: center;
 
   padding-bottom: var(--row-gap-large);
-
 }
 
 .navbar > :last-child {
@@ -87,7 +86,7 @@ a:hover {
   font: var(--font-body-bold);
 }
 
-.navbar-link div:last-child {
+.navbar-link div > :last-child {
   margin-left: auto;
 }
 
