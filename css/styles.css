@@ -62,18 +62,23 @@ a:hover {
 }
 
 .navbar-container {
-    position: static;
-    padding: 0 0;
-    z-index: 10;
+  position: static;
+  padding: 0 0;
+  z-index: 10;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes title left, links right */
+  flex-wrap: wrap;               /* Allows links to wrap to a new line */
   align-items: center;
 
   padding-bottom: var(--row-gap-large);
 
+}
+
+.navbar > :last-child {
+  margin-left: auto; /* Pushes the last item all the way to the right */
 }
 
 .navbar-link {

@@ -1,7 +1,7 @@
 
 .post-card-container {
   display: grid;
-  gap: var(--row-gap-medium);
+  gap: var(--row-gap-large);
   place-content: center;
 
   margin: var(--row-gap-medium) 0;
